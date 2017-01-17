@@ -90,4 +90,6 @@ magenta
 │       │   2017-01-17_153656_10.mid
 ```
 
+### MIDI Playback  
+
 If you have QuickTime 7 (old version) or Logic Pro X (or a similar DAW) you can open these files and take a listen. If not, I recommend downloading [Aria Maestosa](http://ariamaestosa.sourceforge.net/download.html) which is a cross-platform midi sequencer/editor. 
