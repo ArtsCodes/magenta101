@@ -135,12 +135,11 @@ We'll be following a common _song structure_ guideline to help us establish the 
 
 You may recall reviewing the earlier generated melodic material in your software or DAW of choice. You may have noticed that the `num_steps=128` argument resulted in a melody that was 8 measures (or bars) in duration, with a common time (4/4) subdivision. We are going to take that knowledge to map out our song structure.  
 
-First, let's create some folders in our `~/Desktop/magenta/lookback_rnn/` directory. We'll create a folder for each section of musical material. 
+First, let's create some folders in our `~/Desktop/magenta/lookback_rnn/` directory. We'll create a folder for each section of musical material. Note: since the pre-chorus is optional, we won't be using it in this article.  
 
 ```
 mkdir ~/Desktop/magenta/lookback_rnn/intro \
 mkdir ~/Desktop/magenta/lookback_rnn/verse \
-mkdir ~/Desktop/magenta/lookback_rnn/prechorus \
 mkdir ~/Desktop/magenta/lookback_rnn/chorus \
 mkdir ~/Desktop/magenta/lookback_rnn/bridge \
 mkdir ~/Desktop/magenta/lookback_rnn/outro \
@@ -237,3 +236,14 @@ melody_rnn_generate \
 ## Assembling Your Song
 
 Now that we have all of our materials generated we can begin assembling our song. 
+
+### Step 1: Adjust the Voices of Each section
+Just as we stepped through our materials for the intro to tag and transpose each voice to more closely resemble a typical four part ensemble, we need to do the same for each of our remaining sections. 
+
+### Step 2: Organize and Assemble 
+Now that you have your materials you simply must lay them out in the song format structure. 
+
+### Step 3: Tweak and Share!
+You may have finished assembling your song and you think it's still missing something. Now's your chance to modify the materials you've assembled, adding or subtracting instruments, adding percussion, adjusting voices, etc. This is the fun part. 
+
+[Here's](https://www.dropbox.com/s/xib3qxz9p3iwzsv/Magenta_Song.mp3?dl=0) an example of a finished track that I've made following this guide. 
