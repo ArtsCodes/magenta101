@@ -47,7 +47,7 @@ Next, open the terminal (or PowerShell on Windows) and execute the following com
 docker run -it -p 6006:6006 -v ~/Desktop/magenta:/magenta-data tensorflow/magenta
 ```
 
-Once you submit the previous line, the Magenta Docker image will begin downloading. This is a 3.7gb~ image, so grab a cup of coffee and wait for the command line to come to a rest. While this is happening, let's break down the previous line we just submitted to the terminal. 
+Once you submit the previous line, the Magenta Docker image will begin downloading. This is a 3.7gb~ image, so grab a cup of coffee and wait for the command line to come to a rest. While this is happening, let's break down the previous line we just submitted to the terminal. To exit a docker shell session type `exit` and hit return. 
 
 The `docker run` command instructs docker to run the image which is passed in as argument, in this case `tensorflow/magenta`. Docker maintains a registry of images, so when `tensorflow/magenta` is passed as an argument, the registry looks for the latest image and begins downloading it to your system. The `-it` property instructs docker to run this image with an `i`nteractive `t`erminal. This will place you inside the command line (shell) of the image, which will allow you to pass commands to magenta. The `-p` property requests docker to open ports, and the argument `6006:6006` is passed, which requests a 1:1 mapping of the image port and the host port. This allows the docker image and the host machine to communicate with one another seamlessly. Lastly, the `-v` property instructs docker to mount a volume, and the argument we passed, `~/Desktop/magenta:/magenta-data` mounts a folder from the host at `~/Desktop/magenta` to the docker image at `/magenta-data`. Note: Windows users can change `~/Desktop/magenta` to a path such as `C:/magenta`.  
 
@@ -165,3 +165,6 @@ melody_rnn_generate \
   --num_steps=32 \
   --primer_melody="[60]"
 ```
+Head on over to your `.../intro` folder to examine your output. You should see 4 midi files each with 2 bars of materials. At this point, I like to listen to each one. You'll notice that some are far more active then others. I tend to take the most active line and tag it as the melody in my DAW. I'll then take the second most active line with the widest range, transpose it down 2 octaves, and tag it as the bass. Lastly, I will label the least active lines as harmony and decide if they need any transposition. If too many of the lines are occupying the same pitch space, consider transposing them 4 or 7 half steps to create a triad. If your melody is still not standing on it's own, you may want to transpose it up an octave. 
+
+Once you have a 4 voice intro you like, we can proceed to the next section. For fun, [here's](https://www.dropbox.com/s/9dyodmc6mk1p3fz/01_Intro.mp3?dl=0) an example of the intro I just assembled while writing this article. 
