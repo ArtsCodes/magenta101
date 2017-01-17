@@ -131,9 +131,20 @@ The conclusion or outro of a song is a way of ending or completing the song. For
 
 ## Song Structure - Numbers Breakdown
 
-We'll be following a common guideline to help us establish the length of each section.  
+We'll be following a common _song structure_ guideline to help us establish the length of each section.  
 
-You may recall reviewing the earlier generated melodic material in your software or DAW of choice. You may have noticed, that the `num_steps=128` argument resulted in a melody that is 8 measures (or bars) in duration, with a common time (4/4) subdivision. We are going to take that knowledge to map out our song structure. 
+You may recall reviewing the earlier generated melodic material in your software or DAW of choice. You may have noticed that the `num_steps=128` argument resulted in a melody that was 8 measures (or bars) in duration, with a common time (4/4) subdivision. We are going to take that knowledge to map out our song structure.  
+
+First, let's create some folders in our `~/Desktop/magenta/lookback_rnn/` directory. We'll create a folder for each section of musical material. 
+
+```
+mkdir ~/Desktop/magenta/lookback_rnn/intro \
+mkdir ~/Desktop/magenta/lookback_rnn/verse \
+mkdir ~/Desktop/magenta/lookback_rnn/prechorus \
+mkdir ~/Desktop/magenta/lookback_rnn/chorus \
+mkdir ~/Desktop/magenta/lookback_rnn/bridge \
+mkdir ~/Desktop/magenta/lookback_rnn/outro \
+```
 
 ### Intro - 2 bars
 The intro will be 2 bars long, which means that it will need 1/4 of the steps (`32`) we indicated in our original melody(`128`).
