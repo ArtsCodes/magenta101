@@ -93,3 +93,49 @@ magenta
 ### MIDI Playback  
 
 If you have QuickTime 7 (old version) or Logic Pro X (or a similar DAW) you can open these files and take a listen. If not, I recommend downloading [Aria Maestosa](http://ariamaestosa.sourceforge.net/download.html) which is a cross-platform midi sequencer/editor. 
+
+# Coercing Magenta To Generate Song Materials 
+
+Now that you've got your environment setup to generate melodies with Magenta, we can think about how to break this material down into the individual segments which make up a song. 
+
+## Song structure
+
+_Song structure_ or the _musical forms of songs_ in traditional music are typically sectional with repeated material. Other common forms include thirty-two-bar form, verse-chorus form, and the twelve-bar blues. Popular music songs traditionally use the same music for each verse of stanza of lyrics (as opposed to songs that are "through-composed", an approach used in classical music). The most common format is intro, verse, pre-chorus, chorus (or refrain), verse, pre-chorus, chorus, bridge ("middle eight"), verse, chorus and outro.  
+
+Let's break down each of these components to strategize about how to generate materials for each. 
+
+### Intro
+
+The introduction is a unique section that comes at the beginning of the piece. Generally speaking, an introduction will contain just music and no words. It usually builds up suspense for the listener so when the downbeat drops in, it creates a release or surprise. In some songs, the intro is one or more bars of the tonic chord (the "home" key of the song). The introduction may also be based around the chords used in the verse, chorus, or bridge, or a stock "turnaround" progression may be played, such as the I–vi–ii–V progression (particularly in jazz influenced pop songs). In some cases, an introduction contains only drums or percussion parts which set the rhythm and "groove" for the song. Alternately the introduction may consist of a solo sung by the lead singer (or a group of backup singers), or played by an instrumentalist.  
+
+### Verse  
+
+In popular music, a verse roughly corresponds to a poetic stanza because it consists of rhyming lyrics most often with an AABB or ABAB rhyme scheme. When two or more sections of the song have almost identical music and different lyrics, each section is considered one verse. It is not to be confused with a pre-verse, which is an interlude between the introduction of a song and its opening verse. Although less common now, the pre-verse technique was popular with the surf music of the 1960s.[citation needed]
+
+Musically, "the verse is to be understood as a unit that prolongs the tonic....The musical structure of the verse nearly always recurs at least once with a different set of lyrics".[3] Lyrically, "the verse contains the details of the song: the story, the events, images and emotions that the writer wishes to express....Each verse will have different lyrics from the others." "A verse exists primarily to support the chorus or refrain...both musically and lyrically."
+
+### Pre-chorus 
+
+An optional section that may occur after the verse is the "pre-chorus." Also referred to as a "build", "channel," or "transitional bridge," the pre-chorus functions to connect the verse to the chorus with intermediary material, typically using subdominant or similar transitional harmonies. "Often, a two-phrase verse containing basic chords is followed by a passage, often harmonically probing, that leads to the full chorus."[5] Often when the verse and chorus involve the same harmonic structure, the pre-chorus will introduce a new harmonic pattern in order to make the harmony reappearance of the verse harmonies in the chorus seem fresh.  
+
+### Chorus   
+
+"The difference between refrain and chorus is not always cut-and-dried; both refer to passages of unchanging music and text providing a periodic sense of return."[6] "At times, the term 'refrain' has been used interchangeably with 'chorus.' Technically, the refrain may be considered anything that's not the verse....a song part that contains the hook or title and appears more than once in a song is usually called 'a chorus.'"[7] "The chorus contains the main idea, or big picture, of what is being expressed lyrically and musically. It is repeated throughout the song, and the melody and lyric rarely vary."[1] A refrain is, "a repeated line or musical phrase that ties a song together...A refrain is only a phrase, or a word, while a chorus contains many more words."[8] A refrain may be defined as a repetitive phrase or phrases that serve the function of a chorus lyrically but are not placed in a separate section and/or long enough so as to be considered a chorus.[4] For example, refrains are found in The Beatles' "She Loves You" ("yeah, yeah, yeah") AC/DC's "You Shook Me All Night Long", Paul Simon's "The Sound of Silence", and "Deck the Halls" ("fa la la la la").[8]
+
+The chorus or refrain is the element of the song that repeats at least once both musically and lyrically. It is almost always of greater musical and emotional intensity than the verse. "The chorus, which gets its name from a usual thickening of texture from the addition of backing vocals, is always a discrete section that nearly always prolongs the tonic and carries an unvaried poetic text."[9] In terms of narrative, the chorus conveys the main message or theme of the song. Normally the most memorable element of the song for listeners, the chorus usually contains the hook.
+
+### Bridge   
+
+A bridge may be "a transition", but more often in popular music is "a section that contrasts with the verse...[,] usually ends on the dominant...[, and] often culminates in a strong re-transitional".[9] "The bridge is a device that is used to break up the repetitive pattern of the song and keep the listener's attention....In a bridge, the pattern of the words and music change."[8] For example, John Denver's "Country Roads" is a song with a bridge while Stevie Wonder's "You Are the Sunshine of My Life" is a song without one.[8]
+
+In music theory, "middle eight" (a common type of bridge) refers to the section of a song which has a significantly different melody and lyrics, which helps the song develop itself in a natural way by creating a contrast to the previously played, usually placed after the second chorus in a song. (Typically, a song consists of first verse, pre-chorus, chorus, second verse, pre-chorus, chorus, middle eight, chorus).[citation needed] Such sections often consist of new chords, but also frequently just alternate between two chords. It is called a middle 8 because it happens in the middle of the song and the length is generally 8 bars. Jazz players also call this "the release".[citation needed]
+
+A typical song structure employing a middle 8 is:
+
+       ....  ....    ....  ....    ........  ....     ....
+Intro-{Verse-Chorus}{Verse-Chorus}-Middle 8-{Chorus}-{Chorus}-(Outro)[citation needed]
+Middle 8s are often quieter than the remainder of the song,[citation needed] in contrast with the solo, which is generally more energetic. In slower songs, however, a middle 8 can be used to generate energy.[original research?] By adding a powerful upbeat middle 8, musicians can then end the song with a hook in the end chorus and finale.
+
+### Outro  
+
+The conclusion or outro of a song is a way of ending or completing the song. For example, through a fade-out or instrumental tag.  
