@@ -145,6 +145,23 @@ mkdir ~/Desktop/magenta/lookback_rnn/chorus \
 mkdir ~/Desktop/magenta/lookback_rnn/bridge \
 mkdir ~/Desktop/magenta/lookback_rnn/outro \
 ```
+Now that we have these directories, we can start generating material to fill them.  
 
-### Intro - 2 bars
-The intro will be 2 bars long, which means that it will need 1/4 of the steps (`32`) we indicated in our original melody(`128`).
+### Intro - 2 bars - 4 voices
+The intro will be 2 bars long, which means that it will need 1/4 of the steps (`32`) we indicated in our original melody(`128`).  
+
+We'll also need to adjust the output_dir to indicate our `~/Desktop/magenta/lookback_rnn/intro` folder. 
+
+Lastly, we'll adjust the `num_outputs` to be `4`, one for each voice of our four part orchestration. At this point we can begin loosly thinking about these outputs as Melody, Harmony 1, Harmony 2, and Bass. How you assign the output will be up to you, but beginning to listen with ears that are seeking the various characteristics of these voices is important. 
+
+Let's generate our Intro with the following command (inside of the Docker shell):  
+
+ ```
+melody_rnn_generate \
+  --config=lookback_rnn \
+  --bundle_file=/magenta-models/lookback_rnn.mag \
+  --output_dir=/magenta-data/lookback_rnn/intro \
+  --num_outputs=4 \
+  --num_steps=32 \
+  --primer_melody="[60]"
+```
