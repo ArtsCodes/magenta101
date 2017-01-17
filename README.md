@@ -69,3 +69,11 @@ melody_rnn_generate \
   --num_steps=128 \
   --primer_melody="[60]"
 ```
+
+Let's discuss the previous command. `melody_rnn_generate` is a package that generates midi files from a recurrent neural network (rnn) model. In this example, we indicated the configuration as `lookback_rn`, pointed it to an existing model as the bundle_file `/magenta-models/lookback_rnn.mag`, specified the number of files to generate with `num_outputs=10`, specified the number of notes each melody will have with `num_steps=128` and gave it a primer melody of `"[60]"`, which is the midi note for middle 'C'. Lastly, we specified an output directory of `/magenta-data/lookback_rnn/generated`. 
+
+Once this command is executed successfully, you should see the following message in your shell:  
+
+```
+INFO:tensorflow:Wrote 10 MIDI files to /magenta-data/lookback_rnn/generated
+```
