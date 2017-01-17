@@ -1,5 +1,5 @@
 # Magenta 101
-Getting Started: Songwriting with Google's TensorFlow Magenta
+by [Timothy Vallier](http://www.timothyvallier.com/)
 
 Magenta is a project from the Google Brain team that asks: Can we use machine learning to create compelling art and music? If so, how? If not, why not?  
 
@@ -25,4 +25,4 @@ There are several ways to access the Magenta source code and to get started gene
 
 ### WTF is Docker? 
 
-
+The environment (of a host machine) can cause a great deal of frustration during software development. In particular, your operating system, or the version of Python you have installed, all impact what the source code expects to see on your machine. In order to solve this problem, developers have turned to solutions which contain and isolate their production and deployment environments. Enter Docker. You are likely familiar with Virtual Machines, which allow software developers to write and deploy their code to a stable environment. Docker takes the virtual machine concept, and fragments it into smaller pieces which do not need to be replicated. This allows many applications to run in a virtual environment which all share the same base OS kernel. Because of this, Docker is a cross-platform solution for developing mission critical software that will run exactly the same in all Docker environemnts. 
