@@ -145,7 +145,18 @@ mkdir ~/Desktop/magenta/lookback_rnn/chorus \
 mkdir ~/Desktop/magenta/lookback_rnn/bridge \
 mkdir ~/Desktop/magenta/lookback_rnn/outro \
 ```
-Now that we have these directories, we can start generating material to fill them.  
+Now that we have these directories, we can start generating material to fill them.  Our song will have the following structure.  
+
+| Intro  | 2 Bars |
+|--------|--------|
+| Verse  | 4 Bars |
+| Chorus | 4 Bars |
+| Verse  | 4 Bars |
+| Chorus | 4 Bars |
+| Bridge | 8 Bars |
+| Chorus | 4 Bars |
+| Chorus | 4 Bars |
+| Outro  | 2 Bars | 
 
 ### Intro - 2 bars - 4 voices
 The intro will be 2 bars long, which means that it will need 1/4 of the steps (`32`) we indicated in our original melody(`128`).  
@@ -167,4 +178,62 @@ melody_rnn_generate \
 ```
 Head on over to your `.../intro` folder to examine your output. You should see 4 midi files each with 2 bars of materials. At this point, I like to listen to each one. You'll notice that some are far more active then others. I tend to take the most active line and tag it as the melody in my DAW. I'll then take the second most active line with the widest range, transpose it down 2 octaves, and tag it as the bass. Lastly, I will label the least active lines as harmony and decide if they need any transposition. If too many of the lines are occupying the same pitch space, consider transposing them 4 or 7 half steps to create a triad. If your melody is still not standing on it's own, you may want to transpose it up an octave. 
 
-Once you have a 4 voice intro you like, we can proceed to the next section. For fun, [here's](https://www.dropbox.com/s/9dyodmc6mk1p3fz/01_Intro.mp3?dl=0) an example of the intro I just assembled while writing this article. 
+Once you have a 4 voice intro you like, we can proceed to the next section. For fun, [here's](https://www.dropbox.com/s/9dyodmc6mk1p3fz/01_Intro.mp3?dl=0) an example of the intro I just assembled while writing this article.  
+
+Let's proceed generating the material for the remain sections in a similar fashion. 
+
+### Verse - 4 bars - 4 voices 
+Once again, we need to adjust our Magenta command to reflect the duration and voice of this section, along with the output directory. We'll be doing this for each section. Use the following to generate your verse materials:  
+
+ ```
+melody_rnn_generate \
+  --config=lookback_rnn \
+  --bundle_file=/magenta-models/lookback_rnn.mag \
+  --output_dir=/magenta-data/lookback_rnn/verse \
+  --num_outputs=4 \
+  --num_steps=64 \
+  --primer_melody="[60]"
+```
+Feel free to arrange the materials of your verse like we did with the intro, or skip ahead and generate your materials for each section and then assemble at the end. 
+
+Let's proceed with the code to generate the remainder of our materials.
+
+### Chorus - 4 bars - 4 voices 
+
+ ```
+melody_rnn_generate \
+  --config=lookback_rnn \
+  --bundle_file=/magenta-models/lookback_rnn.mag \
+  --output_dir=/magenta-data/lookback_rnn/chorus \
+  --num_outputs=4 \
+  --num_steps=64 \
+  --primer_melody="[60]"
+```
+
+### Bridge - 8 bars - 4 voices 
+
+ ```
+melody_rnn_generate \
+  --config=lookback_rnn \
+  --bundle_file=/magenta-models/lookback_rnn.mag \
+  --output_dir=/magenta-data/lookback_rnn/bridge \
+  --num_outputs=4 \
+  --num_steps=128 \
+  --primer_melody="[60]"
+```
+
+### Outro - 2 bars - 4 voices 
+
+ ```
+melody_rnn_generate \
+  --config=lookback_rnn \
+  --bundle_file=/magenta-models/lookback_rnn.mag \
+  --output_dir=/magenta-data/lookback_rnn/outro \
+  --num_outputs=4 \
+  --num_steps=32 \
+  --primer_melody="[60]"
+```
+
+## Assembling Your Song
+
+Now that we have all of our materials generated we can begin assembling our song. 
