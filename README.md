@@ -49,14 +49,14 @@ docker run -it -p 6006:6006 -v ~/Desktop/magenta:/magenta-data tensorflow/magent
 
 Once you submit the previous line, the Magenta Docker image will begin downloading. This is a 3.7gb~ image, so grab a cup of coffee and wait for the command line to come to a rest. While this is happening, let's break down the previous line we just submitted to the terminal. 
 
-The `docker run` command instructs docker to run the image which is passed in as argument, in this case `tensorflow/magenta`. Docker maintains a registry of images, so when `tensorflow/magenta` is passed as an argument, the registry looks for the latest image and begins downloading it to your system. The `-it` property instructs docker to run this image with an `i`nteractive `t`erminal. This will place you inside the shell of the image, allowing you to pass the magenta software commands. The `-p` property requests docker to open ports, and the argument `6006:6006` is passed, which requests a 1:1 mapping of the image port and the host port. This allows the docker image and the host machine to communicate with one another seamlessly. Lastly, the `-v` property instructs docker to mount a volume, and the argument we passed, `~/Desktop/magenta:/magenta-data` mounts a folder from the host at `~/Desktop/magenta` to the docker image at `/magenta-data`. Note: Windows users can change `~/Desktop/magenta` to a path such as `C:/magenta`.  
+The `docker run` command instructs docker to run the image which is passed in as argument, in this case `tensorflow/magenta`. Docker maintains a registry of images, so when `tensorflow/magenta` is passed as an argument, the registry looks for the latest image and begins downloading it to your system. The `-it` property instructs docker to run this image with an `i`nteractive `t`erminal. This will place you inside the command line (shell) of the image, which will allow you to pass commands to magenta. The `-p` property requests docker to open ports, and the argument `6006:6006` is passed, which requests a 1:1 mapping of the image port and the host port. This allows the docker image and the host machine to communicate with one another seamlessly. Lastly, the `-v` property instructs docker to mount a volume, and the argument we passed, `~/Desktop/magenta:/magenta-data` mounts a folder from the host at `~/Desktop/magenta` to the docker image at `/magenta-data`. Note: Windows users can change `~/Desktop/magenta` to a path such as `C:/magenta`.  
 
 **WARNING**: only data saved in `/magenta-data` will persist across Docker
 sessions.  
 
 ### Generating Melodies   
 
-Once the docker image has been downloaded it will start a shell in a directory with all the Magenta components compiles, installed, and ready to run. This will allow us to tap into the pre-trained models and generate melodies without any further configuration. Let's try that now!
+Once the docker image has been downloaded it will start a shell in a directory with all the Magenta components compiled, installed, and ready to run. This will allow us to tap into the pre-trained models and generate melodies without any further configuration. Let's try that now!
 
 Enter the following command in your Docker `tensorflow/magenta` shell:  
 
@@ -89,3 +89,4 @@ magenta
 │       │   ...
 │       │   2017-01-17_153656_10.mid
 ```
+
