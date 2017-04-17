@@ -246,4 +246,4 @@ Now that you have your materials you simply must lay them out in the song format
 ### Step 3: Tweak and Share!
 You may have finished assembling your song and you think it's still missing something. Now's your chance to modify the materials you've assembled, adding or subtracting instruments, adding percussion, adjusting voices, etc. This is the fun part. 
 
-[Here's](https://www.dropbox.com/s/xib3qxz9p3iwzsv/Magenta_Song.mp3?dl=0) an example of a finished track that I've made following this guide. 
+[Here's](https://www.dropbox.com/s/hzf8vtsqkwrpf4u/Magenta_Song.mp3?dl=0) an example of a finished track that I've made following this guide. 
